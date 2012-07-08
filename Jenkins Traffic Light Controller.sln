@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JTLC.UI", "Jenkins Traffic Light Controller\JTLC.UI.csproj", "{6D6803B7-24DF-4982-ADFA-66CA9E8E727E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JTLC", "JTLC2\JTLC.csproj", "{15202EBD-FD7B-4C2E-B66C-38EE58C665D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15202EBD-FD7B-4C2E-B66C-38EE58C665D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15202EBD-FD7B-4C2E-B66C-38EE58C665D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15202EBD-FD7B-4C2E-B66C-38EE58C665D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15202EBD-FD7B-4C2E-B66C-38EE58C665D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D6803B7-24DF-4982-ADFA-66CA9E8E727E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D6803B7-24DF-4982-ADFA-66CA9E8E727E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D6803B7-24DF-4982-ADFA-66CA9E8E727E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D6803B7-24DF-4982-ADFA-66CA9E8E727E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

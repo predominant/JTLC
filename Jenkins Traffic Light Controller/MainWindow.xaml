@@ -1,0 +1,46 @@
+﻿<Controls:MetroWindow
+    x:Class="JTLC.UI.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+    Title="Jenkins Traffic Light Controller" Height="150" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colours.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Green.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    
+    <StackPanel Margin="5,5,5,5">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            
+            <Label Grid.Column="0" Grid.Row="0" Content="COM Port"/>
+            <ComboBox
+                Grid.Column="1" Grid.Row="0"
+                x:Name="ComPortComboBox"
+                ItemsSource="{Binding Path=ComPorts}"
+                SelectedValue="{Binding Path=SelectedComPort}"/>
+
+            <Label Grid.Column="0" Grid.Row="1" Content="Jenkins URI"/>
+            <TextBox Grid.Column="1" Grid.Row="1" Name="JenkinsURITextBox" Text="{Binding Path=JenkinsUri}" />
+        </Grid>
+        <Button
+            Content="{Binding Path=ButtonText, FallbackValue=Start}"
+            HorizontalAlignment="Center" Width="100" Margin="10,10,10,10"
+            Click="StartStopButton"/>
+    </StackPanel>
+</Controls:MetroWindow>
