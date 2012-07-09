@@ -46,11 +46,11 @@
             if (this.Port != null && this.Port.IsOpen)
             {
                 this.Port.Close();
+                this.Port.Dispose();
             }
 
             this.timer.Stop();
             this.timer.Dispose();
-            this.Port.Dispose();
         }
 
         public void Start()
